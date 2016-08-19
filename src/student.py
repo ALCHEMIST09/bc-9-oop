@@ -53,9 +53,6 @@ class Student(object):
         result = "\n".join(todays_class)
         return result
     
-    @staticmethod
-    def my_method():
-        print('This is a static method')
     
     
         
