@@ -6,7 +6,7 @@ from student import Student
 s1 = Student('Luke', 'M')
 s2 = Student('Jojo', 'M')
 s3 = Student('Emmanual', 'M')
-s4 = Student('Msee Mjanja', 'Mjanja')
+s4 = Student('Msee Mjanja', 'K')
 s5 = Student('Code', 'Warrior')
 s6 = Student('Kimani', 'N')
 s7 = Student('Stephen', 'N')
@@ -31,5 +31,10 @@ print(s9.attend_class(location='Painters', date=today, teacher='Me-Myself'))
 print()
 print(Student.get_attendance_list())
 print()
+
+d = {'ke':'kenya', 'ug':'uganda', 'tz':'tanzania'}
+print(d.get('sa'))
+
+print(d['ke'])
 
 
