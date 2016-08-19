@@ -2,10 +2,10 @@ def super_sum(*args):
     temp_list = []
     sum_total = 0
     
-    if type(args[0]) == list and len(args) == 0:
-        raise TypeError('Function expects a list of numbers, empty list passed')
-    elif type(args) == None:
-        raise TypeError('Function expects at least one argument. None passed')
+    print(args)
+    
+    if args == None:
+        raise TypeError('Function expects a list of numbers. None passed')
     else:
         for elem in args:
             if type(elem) == str:
@@ -24,5 +24,5 @@ def super_sum(*args):
         
     return sum_total
 
-print(super_sum([5, 6], [4,[5]], 10))
+# print(super_sum([5, 6], [4,[5]], 10))
         
