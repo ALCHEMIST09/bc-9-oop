@@ -17,9 +17,9 @@ class NotesApplication(object):
         for k,v in enumerate(self.notes):
             if v.find(search_text) != -1:
                 result  = "Showing results for '" + search_text + "'\n"
-                result += "Note ID: " + k + "\n"
+                result += "Note ID: " + str(k) + "\n"
                 result += v + "\n"
-                result += "By " + self.author
+                result += "By " + self.author + "\n"
                 print(v)
     
     def get(self, note_id):
