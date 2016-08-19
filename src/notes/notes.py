@@ -30,6 +30,15 @@ class NotesApplication(object):
         
     def edit(self, note_id, new_content):
         self.notes[note_id] = new_content
-            
-    
+
+luke_notes = ['bootcamp days at andela', 'managed passed the andela interviews']            
+np = NotesApplication('Luke', luke_notes)
+np.create('pushing stuff to my remote repositroy in github')
+np.create('andela tech talent acceleration program')
+print(np.list())
+print()
+print(np.search('andela'))
+np.edit(2, 'not so cool stuff')
+print(np.list())
+  
         
